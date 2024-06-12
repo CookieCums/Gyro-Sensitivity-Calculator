@@ -32,7 +32,7 @@ input[type="text"], input[type="number"], input[type="submit"] {
     padding: 10px;
     margin-top: 5px;
     border: none;
-    border-radius: 4px;
+    border-radius: 8px;
     background-color: #333333;
     color: #ffffff;
 }
@@ -40,6 +40,9 @@ input[type="text"], input[type="number"], input[type="submit"] {
 input[type="submit"] {
     background-color: #ffab00;
     cursor: pointer;
+    margin-top: 40px;
+    border-radius: 15px;
+    width: 100%;
     transition: background-color 0.3s;
 }
 
