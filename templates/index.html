@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gyro Sensitivity Calculator</title>
+    <a href="/how_does_this_work">How does this work?</a>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gyro Sensitivity Calculator</h1>
+        <form action="/calculate" method="POST">
+            <label for="old_phone_weight">Old Phone Weight (grams):</label>
+            <input type="number" id="old_phone_weight" name="old_phone_weight" required>
+
+            <label for="old_phone_gyro_sensitivity">Old Phone Gyro Sensitivity:</label>
+            <input type="number" id="old_phone_gyro_sensitivity" name="old_phone_gyro_sensitivity" required>
+
+            <label for="new_phone_weight">New Phone Weight (grams):</label>
+            <input type="number" id="new_phone_weight" name="new_phone_weight" required>
+
+            <label for="old_phone_screen_size">Old Phone Screen Size (inches, optional):</label>
+            <input type="number" step="0.1" id="old_phone_screen_size" name="old_phone_screen_size">
+
+            <label for="new_phone_screen_size">New Phone Screen Size (inches, optional):</label>
+            <input type="number" step="0.1" id="new_phone_screen_size" name="new_phone_screen_size">
+
+            <h2>Scope Sensitivities</h2>
+
+            <label for="old_phone_3x_sensitivity">Old Phone 3x Scope Sensitivity:</label>
+            <input type="number" id="old_phone_3x_sensitivity" name="old_phone_3x_sensitivity">
+
+            <label for="old_phone_4x_sensitivity">Old Phone 4x Scope Sensitivity:</label>
+            <input type="number" id="old_phone_4x_sensitivity" name="old_phone_4x_sensitivity">
+
+            <label for="old_phone_6x_sensitivity">Old Phone 6x Scope Sensitivity:</label>
+            <input type="number" id="old_phone_6x_sensitivity" name="old_phone_6x_sensitivity">
+
+            <label for="old_phone_8x_sensitivity">Old Phone 8x Scope Sensitivity:</label>
+            <input type="number" id="old_phone_8x_sensitivity" name="old_phone_8x_sensitivity">
+
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How Does This Work?</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Gyro Sensitivity Calculator</h1>
+        <p>If you are moving from an old phone to a new one, this app supports calculating how to adjust the gyro sensitivity settings. It also considers the weight and, if you wish, the screen size of each handset. Best of all, the calculator even works out scope-specific sensitivities of 3x, 4x, 6x, and 8x using the following formula:</p>
+        
+        <h3>Weight Ratio:</h3>
+        <p>The calculator compares the weight of your new phone to that of your old phone to determine a weight ratio. This is a measure of how much heavier or lighter your new phone will be than your old phone.</p>
+        
+        <h3>Screen Size Ratio (Optional):</h3>
+        <p>Enter the size of the screens of both phones as this calculates the size ratio for the screen. Because the screen sizes may vary between the two phones, we want the ratio of the margins to the size of the largest screen.</p>
+        
+        <h3>Resulting Adjustment Factors:</h3>
+        <p>The calculator has a weighted adjustment factor with a procedure that counteracts the weight by the screen size! The weight factor is set to 0.7 by default, meaning 70% of the sensitivity adjustment goes to weight, while only 30% goes to screen size.</p>
+        
+        <h3>Gyro Sensitivity:</h3>
+        <p>This includes a suggested new sensitivity with factored-in phone weight and screen size if the latter is added.</p>
+        
+        <h3>Scope Sensitivities:</h3>
+        <p>In the same way as overall sensitivities, the calculator takes the combined adjustment factors and scales sensitivity settings for the various scopes (3x, 4x, 6x, 8x). This makes it possible to then compute new recommended values for these scopes on your new phone.</p>
+        
+        <!-- Back button/link -->
+        <a href="/">Back to Calculator</a>
+    </div>
+</body>
+</html>

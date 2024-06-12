@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculation Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculation Result</h1>
+        <p>Recommended new gyro sensitivity for your new phone: <strong>{{ new_gyro_sensitivity }}</strong></p>
+        <h2>Scope Sensitivities</h2>
+        <p>3x Scope Sensitivity: <strong>{{ new_3x_sensitivity }}</strong></p>
+        <p>4x Scope Sensitivity: <strong>{{ new_4x_sensitivity }}</strong></p>
+        <p>6x Scope Sensitivity: <strong>{{ new_6x_sensitivity }}</strong></p>
+        <p>8x Scope Sensitivity: <strong>{{ new_8x_sensitivity }}</strong></p>
+        <p><strong>Note:</strong> These are theoretical calculations, which may not be 100% accurate. Fine-tune the sensitivity in your new phone's settings for a perfect fit.</p>
+        <a href="/">Go back</a>
+    </div>
+</body>
+</html>
