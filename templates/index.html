@@ -4,10 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gyro Sensitivity Calculator</title>
-    <a href="/how_does_this_work">How does this work?</a>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="navbar">
+        <div class="left-links">
+            <a href="/how_does_this_work">How does this work?</a>
+        </div>
+        <div class="right-links">
+            <a href="https://www.reddit.com/user/Critical_Thinker_219/" target="_blank">
+                <img src="{{ url_for('static', filename='reddit.png') }}" alt="Reddit"> Reddit
+            </a>
+            <a href="https://github.com/CookieCums" target="_blank">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub"> GitHub
+            </a>
+        </div>
+    </div>
     <div class="container">
         <h1>Gyro Sensitivity Calculator</h1>
         <form action="/calculate" method="POST">
@@ -43,5 +55,6 @@
             <input type="submit" value="Calculate">
         </form>
     </div>
+    <div class="watermark">Created By Critical_Thinker_219 with ❤️</div>
 </body>
 </html>
