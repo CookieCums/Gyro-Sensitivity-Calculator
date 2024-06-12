@@ -7,6 +7,20 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+    <div class="navbar">
+        <div class="left-links">
+            <a href="/">Home</a>
+            <a href="/how_does_this_work">How does this work?</a>
+        </div>
+        <div class="right-links">
+            <a href="https://www.reddit.com/user/Critical_Thinker_219/" target="_blank">
+                <img src="{{ url_for('static', filename='reddit.png') }}" alt="Reddit"> Reddit
+            </a>
+            <a href="https://github.com/CookieCums" target="_blank">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub"> GitHub
+            </a>
+        </div>
+    </div>
     <div class="container">
         <h1>Calculation Result</h1>
         <p>Recommended new gyro sensitivity for your new phone: <strong>{{ new_gyro_sensitivity }}</strong></p>
@@ -18,5 +32,6 @@
         <p><strong>Note:</strong> These are theoretical calculations, which may not be 100% accurate. Fine-tune the sensitivity in your new phone's settings for a perfect fit.</p>
         <a href="/">Go back</a>
     </div>
+    <div class="watermark">Created By Critical_Thinker_219 with ❤️</div>
 </body>
 </html>
