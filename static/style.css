@@ -55,3 +55,37 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.navbar {
+    background-color: #1e1e1e;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .left-links a,
+.navbar .right-links a {
+    color: #ffab00;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.navbar .left-links a:hover,
+.navbar .right-links a:hover {
+    text-decoration: underline;
+}
+
+.navbar img {
+    height: 24px;
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.watermark {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
