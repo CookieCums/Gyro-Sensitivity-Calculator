@@ -7,27 +7,40 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Gyro Sensitivity Calculator</h1>
-        <p>If you are moving from an old phone to a new one, this app supports calculating how to adjust the gyro sensitivity settings. It also considers the weight and, if you wish, the screen size of each handset. Best of all, the calculator even works out scope-specific sensitivities of 3x, 4x, 6x, and 8x using the following formula:</p>
-        
-        <h3>Weight Ratio:</h3>
-        <p>The calculator compares the weight of your new phone to that of your old phone to determine a weight ratio. This is a measure of how much heavier or lighter your new phone will be than your old phone.</p>
-        
-        <h3>Screen Size Ratio (Optional):</h3>
-        <p>Enter the size of the screens of both phones as this calculates the size ratio for the screen. Because the screen sizes may vary between the two phones, we want the ratio of the margins to the size of the largest screen.</p>
-        
-        <h3>Resulting Adjustment Factors:</h3>
-        <p>The calculator has a weighted adjustment factor with a procedure that counteracts the weight by the screen size! The weight factor is set to 0.7 by default, meaning 70% of the sensitivity adjustment goes to weight, while only 30% goes to screen size.</p>
-        
-        <h3>Gyro Sensitivity:</h3>
-        <p>This includes a suggested new sensitivity with factored-in phone weight and screen size if the latter is added.</p>
-        
-        <h3>Scope Sensitivities:</h3>
-        <p>In the same way as overall sensitivities, the calculator takes the combined adjustment factors and scales sensitivity settings for the various scopes (3x, 4x, 6x, 8x). This makes it possible to then compute new recommended values for these scopes on your new phone.</p>
-        
-        <!-- Back button/link -->
-        <a href="/">Back to Calculator</a>
+    <div class="navbar">
+        <div class="left-links">
+            <a href="/">Home</a>
+        </div>
+        <div class="right-links">
+            <a href="https://www.reddit.com/user/Critical_Thinker_219/" target="_blank">
+                <img src="{{ url_for('static', filename='reddit.png') }}" alt="Reddit"> Reddit
+            </a>
+            <a href="https://github.com/CookieCums" target="_blank">
+                <img src="{{ url_for('static', filename='github.png') }}" alt="GitHub"> GitHub
+            </a>
+        </div>
     </div>
+    <div class="container">
+        <h1>How Does This Work?</h1>
+        <h2>The Gyro Sensitivity Calculator determines how to adjust your phone's gyro sensitivity settings when switching from an old phone to a new one. It considers factors such as the weight and, optionally, the screen size of both phones. Additionally, it can calculate specific sensitivities for different scopes, such as 3x, 4x, 6x, and 8x.</h2>
+
+        <h3>Here's how it works:</h3>
+
+        <h4>Weight Ratio:</h4>
+        <p>The calculator compares the weight of your new phone to that of your old phone to establish a weight ratio. This ratio indicates how much heavier or lighter your new phone is compared to your old one.</p>
+
+        <h4>Screen Size Ratio (Optional):</h4>
+        <p>If you provide the screen sizes for both phones, the calculator computes the screen size ratio. This ratio accounts for any differences in screen sizes between the two phones.</p>
+
+        <h4>Combined Adjustment Factors:</h4>
+        <p>To balance the influence of weight and screen size, the calculator uses a weighting factor. By default, the weight factor is set to 0.7, indicating that weight has a 70% influence, while screen size has a 30% influence on the final sensitivity adjustment.</p>
+
+        <h4>New Gyro Sensitivity:</h4>
+        <p>The new gyro sensitivity for your phone is calculated based on the combined adjustment factors. This provides a recommended new sensitivity setting that accounts for changes in phone weight and, if provided, screen size.</p>
+
+        <h4>Scope Sensitivities:</h4>
+        <p>Similarly, the calculator can adjust sensitivity settings for different scopes (e.g., 3x, 4x, 6x, and 8x) using the same combined adjustment factors. This allows for the calculation of new recommended sensitivities for these scopes on your new phone.</p>
+    </div>
+    <div class="watermark">Created By Critical_Thinker_219 with ❤️</div>
 </body>
 </html>
