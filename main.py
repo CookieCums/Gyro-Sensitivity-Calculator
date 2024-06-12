@@ -1,6 +1,8 @@
 from flask import Flask, render_template, request
+import os
 
 app = Flask(__name__)
+port = int(os.environ.get("PORT", 10000))
 
 def calculate_new_gyro_sensitivity(old_phone_weight, old_phone_gyro_sensitivity, new_phone_weight, old_phone_screen_size=None, new_phone_screen_size=None, weight_factor=0.7):
     """
@@ -70,4 +72,4 @@ def calculate():
         return "Invalid input. Please enter valid numbers.", 400
 
 if __name__ == '__main__':
-    app.run(debug=True)
+     app.run(host='0.0.0.0', port=port, debug=True, use_reloader=False)
